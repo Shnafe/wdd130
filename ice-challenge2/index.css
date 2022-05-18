@@ -1,0 +1,46 @@
+body {
+    background-color: gray;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#circles {
+    grid-row: 1/2;
+}
+#wrapper, img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    height: 50px;
+    padding: 50px;
+}
+
+#desk {
+    border: 20px rgb(79, 78, 78) solid;
+    border-radius: 1000px;
+    box-sizing: border-box;
+    /* margin: 25px; */
+}
+
+#graphic {
+    border: 20px rgb(79, 78, 78) solid;
+    border-radius: 1000px;
+    box-sizing: border-box;
+    /* margin: 25px; */
+}
+
+#person {
+    border: 20px rgb(79, 78, 78) solid;
+    border-radius: 1000px;
+    box-sizing: border-box;
+    /* margin: 25px; */
+}
