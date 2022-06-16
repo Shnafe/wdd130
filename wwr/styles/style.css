@@ -19,7 +19,7 @@ body{
     color: #F2F1EC;
     text-decoration: none;
     font-size: 16px;
-    padding: 15px 30px;
+    padding: 15px 35px;
     margin-top: 50px;
     border-radius: 5px;
 }
@@ -127,8 +127,8 @@ nav a:hover{
     color: white;
 }
 
-#hero-img{
-    width: auto;
+#hero-image{
+    width: 100%;
 }
 
 h2{
@@ -171,6 +171,31 @@ h4{
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #545454;
+}
+
+.contact{
+    grid-column: 5/10;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #545454;
+    width: 100%;
+}
+
+.msg2{
+    background-color: #289DD2;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/6;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #545454;
+    text-align: left;
+}
+
+.address{
+    line-height: 0.5em;
+}
+
+.msg2 h2, .msg2 h4, .address p{
+    color: white;
 }
 
 .button-box{
@@ -265,6 +290,7 @@ footer .social img{
         display: block;
         margin: 0 auto;
     }
+    
     footer {
         margin-top: 25px;
     }
