@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@700&display=swap');
+
+.home-title{
+    font-family: "Oswald";
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+body{
+    background-color: #F2F1EC;
+    font-family: "Open Sans";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.card-img{
+    border: 10px solid #1B3847;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #050505;
+    width: 100%;
+}
+
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+.features{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.features p{
+    grid-column: 2/5;
+    margin-right: 25px;
+}
+.features img{
+    grid-column: 5/6;
+}
+
+.how-to{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.how-to p{
+    grid-column: 3/6;
+    margin-left: 25px;
+}
+.how-to iframe{
+    grid-column: 2/3;
+}
+
+
+header{
+    background-color: #964f37;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.logo, .icon{
+    width: 80px;
+}
+
+.logo{
+    border-radius: 5px;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.icon{
+    padding-top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-align: center;
+    color: #F2F1EC;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover{
+    background-color: #F6D5B0;
+    color: black;
+}
+
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+
+#hero-image{
+    width: 100%;
+}
+
+h2{
+    margin: 0;
+}
+
+h4{
+    color: #964f37;
+}
+
+.home-grid{
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-rows: 1fr 1fr;
+}
+
+.msg{
+    background-color: #289DD2;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #545454;
+}
+
+.msg h2{
+    color: #F2F1EC;
+}
+
+.msg p{
+    color: #F2F1EC;
+    font-size: .6em;
+    padding-bottom: 15px;
+}
+
+.contact{
+    grid-column: 5/10;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #545454;
+    width: 100%;
+}
+
+.msg2{
+    background-color: #289DD2;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/6;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #545454;
+    text-align: left;
+}
+
+.address{
+    line-height: 0.5em;
+}
+
+.msg2 h2, .msg2 h4, .address p{
+    color: white;
+}
+
+.button-box{
+    text-align: center;
+}
+
+main section{
+    text-align: center;
+}
+
+main section img{
+    box-sizing: border-box;
+}
+
+#background{
+    height: 725px;
+    background-color: #396E94;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+footer{
+    background-color: #964f37;
+    font-size: .8em;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3{
+    color: #F2F1EC;
+}
+
+footer a{
+    color: #F2F1EC;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    color: #F6D5B0;
+}
+
+footer h3 a:hover{
+    text-decoration: underline;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+#feedback{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;
+}
+
+.moveDown{
+    margin-top: 3em;
+}
+
+ul{
+    list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    footer {
+        margin-top: 25px;
+    }
+}
