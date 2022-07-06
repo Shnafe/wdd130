@@ -20,6 +20,30 @@ body{
     width: 100%;
 }
 
+.sidenav{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
 .card-img:hover{
     opacity: .6;
     transform: scale(1.1);
@@ -55,6 +79,7 @@ header{
     background-color: #964f37;
     display: grid;
     grid-template-columns: 150px auto;
+    margin-left: 160px;
 }
 
 #content{
@@ -116,6 +141,7 @@ h4{
 }
 
 .home-grid{
+    margin-left: 160px;
     display: grid;
     /* grid-template-columns: repeat(10, 1fr); */
     grid-template-rows: 1fr 1fr;
@@ -188,6 +214,7 @@ footer{
     background-color: #964f37;
     font-size: .8em;
     padding: 25px 50px;
+    margin-left: 160px;
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
@@ -216,9 +243,6 @@ footer .social img{
     padding-top: 15px;
 }
 
-.rivers-card, .camping-card, .rapids-card{
-    margin: 200px 0;
-}
 
 #feedback{
     background-color: antiquewhite;
@@ -238,7 +262,7 @@ ul{
     list-style: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (max-height: 450px) {
     #hero, .home-grid {
         display: block;
         height: auto;
@@ -279,4 +303,6 @@ ul{
     footer {
         margin-top: 25px;
     }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
